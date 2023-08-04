@@ -143,7 +143,7 @@ const colors: Color[] = [
         pantoneCode: "15-1423",
         hex: "#FB9F93",
         season: "Warm Autumn",
-    }
+    },
     {
         pantoneName: "Porcelain Rose",
         pantoneCode: "17-1643",
