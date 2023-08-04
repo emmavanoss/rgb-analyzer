@@ -1,14 +1,8 @@
 import type { Color } from "./types"
 
 // icolorpalette.com
-const colors: Color[] = [
-    // {
-    //     pantoneName: "",
-    //     pantoneCode: "",
-    //     hex: "",
-    //     season: "Warm Autumn",
-    // },
-
+const colors: Color[] = 
+[
     // creamy neutrals
     {
         pantoneName: "Seedpearl",

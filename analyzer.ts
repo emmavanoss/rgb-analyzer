@@ -2,13 +2,13 @@ import warmSpringColors from "./warmSpring";
 import warmAutumnColors from "./warmAutumn";
 import type { Color } from "./types"
 
-const MATCH_DISTANCE = 500;
+const MATCH_DISTANCE = 450;
 
 type Pair = [Color, Color]
 
 // TODO compare all seasons
 
-function generatePairs(): Pair[] {
+export function generatePairs(): Pair[] {
     const matches = compareSeasons(warmAutumnColors, warmSpringColors);
     return matches
 }
