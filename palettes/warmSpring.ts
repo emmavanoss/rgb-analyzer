@@ -1,4 +1,4 @@
-import type { Color } from "./types"
+import type { Color } from "../types"
 
 // palette: https://theconceptwardrobe.com/colour-analysis-comprehensive-guides/true-spring-a-comprehensive-guide
 // hex codes (1): icolorpalette.com

@@ -1,4 +1,4 @@
-import type { Color } from "./types"
+import type { Color } from "../types"
 
 // icolorpalette.com
 const colors: Color[] = 

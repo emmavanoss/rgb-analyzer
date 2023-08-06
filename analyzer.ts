@@ -1,16 +1,27 @@
-import warmSpringColors from "./warmSpring";
-import warmAutumnColors from "./warmAutumn";
+import warmSpringColors from "./palettes/warmSpring";
+import coolSummerColors from "./palettes/coolSummer";
+import warmAutumnColors from "./palettes/warmAutumn";
+import coolWinterColors from "./palettes/coolWinter";
 import type { Color } from "./types"
 
 const MATCH_DISTANCE = 450;
 
 type Pair = [Color, Color]
 
-// TODO compare all seasons
-
 export function generatePairs(): Pair[] {
-    const matches = compareSeasons(warmAutumnColors, warmSpringColors);
-    return matches
+    const autumnSpring = compareSeasons(warmAutumnColors, warmSpringColors);
+    const autumnSummer = compareSeasons(warmAutumnColors, coolSummerColors);
+    const autumnWinter = compareSeasons(warmAutumnColors, coolWinterColors);
+    const springSummer = compareSeasons(warmSpringColors, coolSummerColors);
+    const springWinter = compareSeasons(warmSpringColors, coolWinterColors);
+    const summerWinter = compareSeasons(coolWinterColors, coolWinterColors);
+
+    return autumnSpring
+        .concat(autumnSummer)
+        .concat(autumnWinter)
+        .concat(springSummer)
+        .concat(springWinter)
+        .concat(summerWinter)
 }
 
 function compareSeasons(seasonA: Color[], seasonB: Color[]): Pair[] {
