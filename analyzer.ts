@@ -14,7 +14,7 @@ export function generatePairs(): Pair[] {
     const autumnWinter = compareSeasons(warmAutumnColors, coolWinterColors);
     const springSummer = compareSeasons(warmSpringColors, coolSummerColors);
     const springWinter = compareSeasons(warmSpringColors, coolWinterColors);
-    const summerWinter = compareSeasons(coolWinterColors, coolWinterColors);
+    const summerWinter = compareSeasons(coolSummerColors, coolWinterColors);
 
     return autumnSpring
         .concat(autumnSummer)
