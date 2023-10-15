@@ -226,7 +226,6 @@ const colors: Color[] =
         hex: "#434237",
         season: "Warm Autumn",
     },
-
 ]
 
 export default colors
